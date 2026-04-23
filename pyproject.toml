@@ -1,0 +1,19 @@
+[project]
+name = "sudoku"
+version = "0.1.0"
+description = "Classic 9x9 Sudoku game with three difficulty levels"
+requires-python = ">=3.13"
+dependencies = [
+    "pyqt6>=6.11.0",
+]
+
+[project.scripts]
+sudoku = "main:main"
+
+[tool.uv.sources]
+pyqt6 = { index = "jfrog" }
+
+[[tool.uv.index]]
+name = "jfrog"
+url = "https://cochlear.jfrog.io/artifactory/api/pypi/coh-esw-pip/simple"
+default = true
